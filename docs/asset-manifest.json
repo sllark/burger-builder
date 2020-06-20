@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/burger-builder/static/css/main.67a33343.chunk.css",
-    "main.js": "/burger-builder/static/js/main.e5307474.chunk.js",
-    "main.js.map": "/burger-builder/static/js/main.e5307474.chunk.js.map",
-    "runtime-main.js": "/burger-builder/static/js/runtime-main.9d3fd075.js",
-    "runtime-main.js.map": "/burger-builder/static/js/runtime-main.9d3fd075.js.map",
-    "static/js/2.8801c98e.chunk.js": "/burger-builder/static/js/2.8801c98e.chunk.js",
-    "static/js/2.8801c98e.chunk.js.map": "/burger-builder/static/js/2.8801c98e.chunk.js.map",
-    "index.html": "/burger-builder/index.html",
-    "precache-manifest.cf077fbbbfe799e229a316bc4a8ab4c8.js": "/burger-builder/precache-manifest.cf077fbbbfe799e229a316bc4a8ab4c8.js",
-    "service-worker.js": "/burger-builder/service-worker.js",
-    "static/css/main.67a33343.chunk.css.map": "/burger-builder/static/css/main.67a33343.chunk.css.map",
-    "static/js/2.8801c98e.chunk.js.LICENSE": "/burger-builder/static/js/2.8801c98e.chunk.js.LICENSE",
-    "static/media/27.1 burger-logo.png.png": "/burger-builder/static/media/27.1 burger-logo.png.b8503d26.png"
+    "main.css": "/static/css/main.67a33343.chunk.css",
+    "main.js": "/static/js/main.2c4aca95.chunk.js",
+    "main.js.map": "/static/js/main.2c4aca95.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b92f21b2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b92f21b2.js.map",
+    "static/js/2.8801c98e.chunk.js": "/static/js/2.8801c98e.chunk.js",
+    "static/js/2.8801c98e.chunk.js.map": "/static/js/2.8801c98e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.48c7e15589efaa3fb02e9097b44e9702.js": "/precache-manifest.48c7e15589efaa3fb02e9097b44e9702.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.67a33343.chunk.css.map": "/static/css/main.67a33343.chunk.css.map",
+    "static/js/2.8801c98e.chunk.js.LICENSE": "/static/js/2.8801c98e.chunk.js.LICENSE",
+    "static/media/27.1 burger-logo.png.png": "/static/media/27.1 burger-logo.png.b8503d26.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9d3fd075.js",
+    "static/js/runtime-main.b92f21b2.js",
     "static/js/2.8801c98e.chunk.js",
     "static/css/main.67a33343.chunk.css",
-    "static/js/main.e5307474.chunk.js"
+    "static/js/main.2c4aca95.chunk.js"
   ]
 }
