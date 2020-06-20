@@ -1,0 +1,21 @@
+.checkoutBurgerContainer{
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+.btnWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.btnWrapper button{
+    margin: 0 1rem;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 15px;
+}

@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+main{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+img,a{
+    width: auto;
+    height: 100%;
+}
+a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.toolbar{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7f3608;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    color: white;
+    padding: 0 30px;
+}
+
+.toolbar>*{
+    height: 100%;
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid white;*/
+}
+
+.toolbar>:nth-child(1) {
+    justify-content: flex-start;
+}
+.toolbar>:nth-child(2) {
+    padding: 10px 0;
+    width: 15%;
+
+}
+.toolbar>:nth-child(3) {
+    justify-content: flex-end;
+}
+
+.menuContainer{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.menuContainer>div{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+.navList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+li{
+    height: 100%;
+}
+li>a{
+    padding: 15px 15px;
+}
+
+.navList a.active,
+.navList a:active,
+.navList a:hover{
+    background-color: #8f5c2c;
+    border-bottom: 4px solid #40a4c8;
+}
+
+
+.sideDrawer{
+    width: 280px;
+    max-width: 80%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fbfbfb;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding: 30px 10px;
+    z-index: 101;
+    transition: all 0.4s;
+}
+
+.sideDrawer>a{
+    height: 30px;
+}
+
+.sideDrawer ul{
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 30px;
+}
+.sideDrawer ul li {
+    width: 100%;
+    height: 55px;
+}
+
+.sideDrawer ul li a{
+    color: #8f5c2c;
+    font-weight: bold;
+}
+
+
+
+.sideDrawer .navList a.active,
+.sideDrawer .navList a:active,
+.sideDrawer .navList a:hover{
+    color: #40a4c8;
+    border: none;
+    background-color: white;
+}
+
+
+.hidesideDrawer{
+    transform: translateX(-100%);
+}
+
+
+
+.burgerContainer{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 330px;
+  overflow: auto;
+  text-align: center;
+  margin-top: 60px;
+
+}
+
+.Controller{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cf8f2e;
+}
+.IngrediendControl {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.IngrediendControl p{
+    /*margin: 10px;*/
+    width: 30%;
+    color: black;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+button{
+    margin: 10px 0;
+    padding: 10px 30px;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    border-radius: 4px;
+}
+.IngrediendControl button{
+    width: 33%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:disabled{
+    opacity: 0.7;
+}
+
+button:disabled:hover{
+    cursor: not-allowed;
+}
+h2.price{
+    text-align: center;
+}
+
+.orderNowButton{
+    padding: 15px 50px;
+    margin: 15px 0;
+    font-size: 22px;
+    background-color: #e83d00;
+    font-weight: bold;
+    color: white;
+}
+
+.orderNowButton:disabled{
+    background-color: #C7C6C6;
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+    color: #888888;
+}
+.Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    width: 70%;
+    min-height: 18rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 10px 16px 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+.Modal > .orderDiv{
+    width: 100%;
+}
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+        /*left: calc(50% - 250px);*/
+    }
+}
+
+.Modal>*{
+    margin: 10px 0;
+}
+
+.Modal ul{
+    padding-left:30px ;
+    font-size: 18px;
+}
+
+.hideModal{
+    transform: translate(-50%,-100vh);
+    opacity: 0;
+}
+.backdrop{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.cancelBtn{
+    font-weight: bold;
+    color: #E43234;
+    border: 1px solid #E43234;
+    margin-right: 10px;
+
+}
+
+
+.contBtn{
+    font-weight: bold;
+    color: #08b100;
+    border: 1px solid #08b100;
+}
+@media screen and (max-width: 768px) {
+    .toolbar > .navList{
+        display: none;
+    }
+
+    .toolbar>:nth-child(1),
+    .toolbar>:nth-child(2)
+    {
+        width: 49%;
+    }
+    .toolbar>:nth-child(2){
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Controller .IngrediendControl{
+        width: 95%;
+    }
+
+    .Modal {
+        width: 95%;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .sideDrawer{
+        display: none;
+    }
+    .toolbar .backdrop{
+        display: none;
+    }
+}

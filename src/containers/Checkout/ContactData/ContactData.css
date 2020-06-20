@@ -1,0 +1,45 @@
+.Form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    padding: 0 10px;
+    max-width: 500px;
+}
+
+input,select{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 16px;
+    border: 1px solid #bebebe;
+    outline: 0;
+}
+.formContainer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.inputError,.inputError:active,.inputError:focus{
+    border: 1px solid red;
+}
+
+.inputSuccess,.inputSuccess:active,.inputSuccess:focus{
+    border: 1px solid #08b100;
+}
+
+.errorMesssage{
+    color:#E43234;
+    font-weight: 600;
+    text-align: center;
+}
+
+h1{
+    font-size: 30px;
+    margin: 10px 0;
+    color: #7f3608;
+    font-weight: 600;
+}
